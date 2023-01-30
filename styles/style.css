@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+
+*,
+*::after,
+::before {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+
+}
+
+:root {
+  --clr-white: white;
+  --clr-black: black;
+  --amber-yellow: #ffbe0bff;
+  --orange-pantone: #fb5607ff;
+  --winter-pink: #ff006eff;
+  --blue-violet: #8338ecff;
+  --azure-blue: #3a86ffff;
+  --clr-box-shadow: 0px 25px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* global css */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  background-image: url(../assets/egg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-image: url(../assets/egg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 25px solid white;
+  margin: auto;
+  padding: 8rem 2rem;
+  border-radius: 33px;
+  height: 50vh;
+  color: white;
+  box-shadow: var(--clr-box-shadow);
+  width: 35%;
+}
+
+p {
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: purple;
+  margin-left: 2rem;
+}
+
+.date-container {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.time-container {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-left: 12rem;
+
+}
+
+.day-container {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+}
+
+.period-section {
+  margin-left: 17rem;
+  margin-top: 0.55rem;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width:700px) {
+
+  body {
+    height: 100h;
+    width: auto;
+  }
+
+
+  .container {
+    height: 38vh;
+    width: 80%;
+  }
+
+  p {
+    font-size: 12px;
+    margin-left: -0.30rem;
+  }
+
+  .day-container {
+    margin-right: 4rem;
+  }
+
+  .period-section {
+    float: right;
+    margin-top: -0.33rem;
+  }
+
+  .time-container {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3rem;
+  }
+
+  .date-container {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .day-container {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+}
